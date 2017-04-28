@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		902525531EB37A0E00CC861B /* Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902525521EB37A0E00CC861B /* Calculations.swift */; };
+		902750271EB3894500BCEA07 /* AddCalculationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 902750261EB3894500BCEA07 /* AddCalculationTableViewController.m */; };
+		9027502A1EB38E8300BCEA07 /* EquasionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 902750291EB38E8300BCEA07 /* EquasionsTableViewController.m */; };
+		902750331EB3C8E600BCEA07 /* EquasionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 902750321EB3C8E600BCEA07 /* EquasionsCell.m */; };
 		90DB6D981EB13E35009A8F78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB6D971EB13E35009A8F78 /* main.m */; };
 		90DB6D9B1EB13E35009A8F78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB6D9A1EB13E35009A8F78 /* AppDelegate.m */; };
-		90DB6D9E1EB13E35009A8F78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB6D9D1EB13E35009A8F78 /* ViewController.m */; };
 		90DB6DA11EB13E35009A8F78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90DB6D9F1EB13E35009A8F78 /* Main.storyboard */; };
 		90DB6DA31EB13E35009A8F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90DB6DA21EB13E35009A8F78 /* Assets.xcassets */; };
 		90DB6DA61EB13E35009A8F78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90DB6DA41EB13E35009A8F78 /* LaunchScreen.storyboard */; };
@@ -35,12 +38,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		902525511EB37A0E00CC861B /* High Voltage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "High Voltage-Bridging-Header.h"; sourceTree = "<group>"; };
+		902525521EB37A0E00CC861B /* Calculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculations.swift; sourceTree = "<group>"; };
+		902750251EB3894500BCEA07 /* AddCalculationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCalculationTableViewController.h; path = ../AddCalculationTableViewController.h; sourceTree = "<group>"; };
+		902750261EB3894500BCEA07 /* AddCalculationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddCalculationTableViewController.m; path = ../AddCalculationTableViewController.m; sourceTree = "<group>"; };
+		902750281EB38E8300BCEA07 /* EquasionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EquasionsTableViewController.h; sourceTree = "<group>"; };
+		902750291EB38E8300BCEA07 /* EquasionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EquasionsTableViewController.m; sourceTree = "<group>"; };
+		902750311EB3C8E600BCEA07 /* EquasionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EquasionsCell.h; sourceTree = "<group>"; };
+		902750321EB3C8E600BCEA07 /* EquasionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EquasionsCell.m; sourceTree = "<group>"; };
 		90DB6D931EB13E35009A8F78 /* High Voltage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "High Voltage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DB6D971EB13E35009A8F78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90DB6D991EB13E35009A8F78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		90DB6D9A1EB13E35009A8F78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		90DB6D9C1EB13E35009A8F78 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		90DB6D9D1EB13E35009A8F78 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		90DB6DA01EB13E35009A8F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90DB6DA21EB13E35009A8F78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90DB6DA51EB13E35009A8F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,15 +110,21 @@
 		90DB6D951EB13E35009A8F78 /* High Voltage */ = {
 			isa = PBXGroup;
 			children = (
+				902750261EB3894500BCEA07 /* AddCalculationTableViewController.m */,
+				902750251EB3894500BCEA07 /* AddCalculationTableViewController.h */,
 				90DB6D991EB13E35009A8F78 /* AppDelegate.h */,
 				90DB6D9A1EB13E35009A8F78 /* AppDelegate.m */,
-				90DB6D9C1EB13E35009A8F78 /* ViewController.h */,
-				90DB6D9D1EB13E35009A8F78 /* ViewController.m */,
 				90DB6D9F1EB13E35009A8F78 /* Main.storyboard */,
+				902750311EB3C8E600BCEA07 /* EquasionsCell.h */,
+				902750321EB3C8E600BCEA07 /* EquasionsCell.m */,
+				902750281EB38E8300BCEA07 /* EquasionsTableViewController.h */,
+				902750291EB38E8300BCEA07 /* EquasionsTableViewController.m */,
+				902525521EB37A0E00CC861B /* Calculations.swift */,
 				90DB6DA21EB13E35009A8F78 /* Assets.xcassets */,
 				90DB6DA41EB13E35009A8F78 /* LaunchScreen.storyboard */,
 				90DB6DA71EB13E35009A8F78 /* Info.plist */,
 				90DB6D961EB13E35009A8F78 /* Supporting Files */,
+				902525511EB37A0E00CC861B /* High Voltage-Bridging-Header.h */,
 			);
 			path = "High Voltage";
 			sourceTree = "<group>";
@@ -208,6 +223,7 @@
 					90DB6D921EB13E35009A8F78 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 5CZ45M6538;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					90DB6DAB1EB13E35009A8F78 = {
@@ -276,9 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90DB6D9E1EB13E35009A8F78 /* ViewController.m in Sources */,
 				90DB6D9B1EB13E35009A8F78 /* AppDelegate.m in Sources */,
+				902750271EB3894500BCEA07 /* AddCalculationTableViewController.m in Sources */,
+				902750331EB3C8E600BCEA07 /* EquasionsCell.m in Sources */,
 				90DB6D981EB13E35009A8F78 /* main.m in Sources */,
+				9027502A1EB38E8300BCEA07 /* EquasionsTableViewController.m in Sources */,
+				902525531EB37A0E00CC861B /* Calculations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,11 +448,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5CZ45M6538;
 				INFOPLIST_FILE = "High Voltage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "The-Iron-Yard.High-Voltage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "High Voltage/High Voltage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -441,17 +464,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5CZ45M6538;
 				INFOPLIST_FILE = "High Voltage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "The-Iron-Yard.High-Voltage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "High Voltage/High Voltage-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		90DB6DC41EB13E35009A8F78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 5CZ45M6538;
 				INFOPLIST_FILE = "High VoltageTests/Info.plist";
@@ -465,6 +492,7 @@
 		90DB6DC51EB13E35009A8F78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 5CZ45M6538;
 				INFOPLIST_FILE = "High VoltageTests/Info.plist";
@@ -478,6 +506,7 @@
 		90DB6DC71EB13E35009A8F78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5CZ45M6538;
 				INFOPLIST_FILE = "High VoltageUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -490,6 +519,7 @@
 		90DB6DC81EB13E35009A8F78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5CZ45M6538;
 				INFOPLIST_FILE = "High VoltageUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -518,6 +548,7 @@
 				90DB6DC21EB13E35009A8F78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90DB6DC31EB13E35009A8F78 /* Build configuration list for PBXNativeTarget "High VoltageTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +557,7 @@
 				90DB6DC51EB13E35009A8F78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90DB6DC61EB13E35009A8F78 /* Build configuration list for PBXNativeTarget "High VoltageUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +566,7 @@
 				90DB6DC81EB13E35009A8F78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
