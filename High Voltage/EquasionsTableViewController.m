@@ -25,6 +25,12 @@
 
 - (void)viewDidLoad
 {
+  //[UITableView setBackgroundColor: UIColor {{kCGColorSpaceLinearGray}}];
+ // UITableView.separatorStyle = .none
+ // tableView?.tableFooterView = UIView()
+ // tableView?.tableHeaderView = UIView()
+
+  
     [super viewDidLoad];
   allCalculations = @{@"Watts": @"watts",
                       @"Volts": @"volts",
@@ -97,11 +103,13 @@
     EquasionsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EquasionCell" forIndexPath:indexPath];
     
   NSString *calculationName = visibleCalculations[indexPath.item];
-  cell.imageView.image = [UIImage imageNamed:allCalculations[calculationName]];
+ // cell.imageView.image = [UIImage imageNamed:allCalculations[calculationName]];
   cell.calculationLabel.text = calculationName;
     
     return cell;
 }
+
+
 
 
 /*

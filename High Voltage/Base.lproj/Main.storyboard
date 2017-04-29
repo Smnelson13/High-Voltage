@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,16 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EquasionCell" id="jg2-sO-fOp" customClass="EquasionsCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jg2-sO-fOp" id="W1r-eT-63V">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KuV-hm-7DE">
-                                            <rect key="frame" x="193" y="6" width="167" height="30"/>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KuV-hm-7DE">
+                                            <rect key="frame" x="172.5" y="6" width="187.5" height="30"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
@@ -34,7 +36,6 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYl-t1-ZuC">
                                             <rect key="frame" x="15" y="9.5" width="49" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -43,8 +44,10 @@
                                         <constraint firstItem="aYl-t1-ZuC" firstAttribute="centerY" secondItem="W1r-eT-63V" secondAttribute="centerY" id="9mM-jv-Xug"/>
                                         <constraint firstItem="aYl-t1-ZuC" firstAttribute="leading" secondItem="W1r-eT-63V" secondAttribute="leading" constant="15" id="ZxA-81-6vh"/>
                                         <constraint firstAttribute="trailing" secondItem="KuV-hm-7DE" secondAttribute="trailing" constant="15" id="e7E-QD-u2V"/>
+                                        <constraint firstItem="KuV-hm-7DE" firstAttribute="width" secondItem="W1r-eT-63V" secondAttribute="width" multiplier="0.5" id="ldR-dO-ygQ"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="calculationLabel" destination="aYl-t1-ZuC" id="P4I-rf-aef"/>
                                 </connections>
@@ -57,6 +60,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="c78-uz-Hdd">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="iFC-gX-YI3">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="GpJ-j9-0up" kind="popoverPresentation" identifier="AddCalculationPopoverSegue" popoverAnchorBarButtonItem="iFC-gX-YI3" id="c4U-c3-Nbc">
                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -93,6 +97,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -113,9 +118,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4sr-Bc-qA5" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JLL-p7-dal">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="JLL-p7-dal">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20589575399999999" green="0.53248844750000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
