@@ -9,40 +9,47 @@
 import Foundation
 import UIKit
 
-enum calculate
+
+class Calculations
 {
-  case ohms
-  case watts
-  case volts
-  case amps
-}
 
-var calculationToMake = calculate.amps
+  enum Calculate
+  {
+    case ohms
+    case watts
+    case volts
+    case amps
+  }
 
-var i = 0
-var v = 0
-var r = 0
-var p = 0
+  var calculationToMake = Calculate.amps
 
-switch calculationToMake
-{
-case calculate.ohms:
-  r = v % i
-  r = v * v % p
-  r = p % i * i
-case calculate.watts:
-  p = v * i
-  p = v * v % r
-  p = i * i * r
-case calculate.volts:
-  v = i * r
-  v = p % i
-  v = Int(sqrt(Double(p * r)))
-case calculate.amps:
-  i = v % r
-  i = p % v
-  i = Int(sqrt(Double(p % r)))
+  var i = 0
+  var v = 0
+  var r = 0
+  var p = 0
 
-default: calculate.ohms
+  switch calculationToMake
+  {
+  case Calculate.ohms:
+    r = v % i
+    r = v * v % p
+    r = p % i * i
+  case Calculate.watts:
+    p = v * i
+    p = v * v % r
+    p = i * i * r
+  case Calculate.volts:
+    v = i * r
+    v = p % i
+    v = Int(sqrt(Double(p * r)))
+  case Calculate.amps:
+    i = v % r
+    i = p % v
+    i = Int(sqrt(Double(p % r)))
+
+  default:
+  break
+
+  }
 
 }
